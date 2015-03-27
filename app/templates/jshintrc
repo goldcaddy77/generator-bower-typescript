@@ -13,5 +13,16 @@
   "quotmark": "single",
   "undef": true,
   "unused": true,
-  "strict": true
+  "strict": true,
+  "noempty": true,
+  "nonew": true,
+  "trailing": true,
+  "maxlen": 120,
+  "boss": true,
+  "eqnull": true,
+  "expr": true,
+  "globalstrict": true,
+  "laxbreak": true,
+  "loopfunc": true,
+  "sub": true
 }
