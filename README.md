@@ -1,9 +1,59 @@
-# generator-bower-typescript [![Build Status](https://secure.travis-ci.org/goldcaddy77/generator-bower-typescript.png?branch=master)](https://travis-ci.org/goldcaddy77/generator-bower-typescript)
+# Yeoman generator for Bower modules written in TypeScript
 
-> [Yeoman](http://yeoman.io) generator
+This is a generator to quickly create Bower modules written in TypeScript using Gulp for a task runner.  The generated Bower module has the following capabilities:
+
+* Transpiles TypeScript to Javascript
+* Creates both bower.json and package.json (for npm)
+* Automatic bumping of patch version number through a gulp task
 
 
-## Getting Started
+## Usage
+
+Install global npm dependencies
+
+        npm install -g yo gulp bower generator-bower-typescript
+
+Make a new directory and `cd` into it:
+
+        mkdir my-new-project && cd $_
+
+Run `bower-typescript`:
+
+        yo bower-typescript
+
+After answering questions about your app, run the example:
+
+        # build your module (compile ts -> js)
+        gulp build
+
+        # Set up development link to the module code
+        bower link
+
+        # Tie the example to your local bower module link
+        cd examples
+        bower link my-awesome-module
+
+        # Install your module in the example project
+        bower install
+
+        # Open the test page
+        open index.html
+
+If you see an alert box that says "Hello World," you're good to go.
+
+
+## Bower Registration
+
+... TODO ...
+
+## Bumping Your Module Version
+
+The gulpfile contains a task - `bump` - that will bump your module version in bower.json and package.json, create a git tag and commit it locally.  All you need to do is push it to git:
+
+     gulp bump
+     git push origin master --tags
+
+## Yeoman Info
 
 ### What is Yeoman?
 
@@ -15,32 +65,12 @@ Basically, he wears a top hat, lives in your computer, and waits for you to tell
 
 Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
 
-```bash
-npm install -g yo
-```
-
-### Yeoman Generators
-
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
-
-To install generator-bower-typescript from npm, run:
-
-```bash
-npm install -g generator-bower-typescript
-```
-
-Finally, initiate the generator:
-
-```bash
-yo bower-typescript
-```
 
 ### Getting To Know Yeoman
 
 Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
 
 If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
-
 
 ## License
 

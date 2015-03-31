@@ -1,6 +1,9 @@
 {
-  "name": "package",
+  "name": "<%= componentKey %>",
   "version": "0.0.0",
-  "dependencies": {}
+  "description": "<%= componentDescription %>",
+  "main": "dist/main.js",
+  "dependencies": {},
+  "devDependencies": {}
 }
 

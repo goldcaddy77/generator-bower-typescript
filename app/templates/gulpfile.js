@@ -23,7 +23,6 @@ var destinations = {
   js: './dist/'
 };
 
-// Note has DefinitelyTyped support already, but not used
 gulp.task('js:app', function() {
   var tsStream = gulp.src(sources.app.ts)
     .pipe(ts({
@@ -65,14 +64,14 @@ gulp.task('bump', function() {
   ];
 
   inquirer.prompt( questions, function( answers ) {
-    if(answers.bump == 'Y') {
+    if(answers.bump === 'Y') {
 
       return gulp.src(['./package.json', './bower.json'])
           .pipe(bump({type: 'patch'}))
           .pipe(gulp.dest('./'))
           .pipe(git.commit('bump patch version'))
           .pipe(filter('package.json'))  // read package.json for the new version
-          .pipe(tagVersion());          // create tag
+          .pipe(tagVersion());           // create tag
 
     }
   });

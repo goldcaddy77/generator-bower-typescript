@@ -1,7 +1,7 @@
 {
   "name": "generator-bower-typescript",
   "version": "0.0.0",
-  "description": "Yeoman generator",
+  "description": "Yeoman generator for Bower TypeScript modules",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "goldcaddy77/generator-bower-typescript",
@@ -21,7 +21,9 @@
   ],
   "keywords": [
     "yeoman-generator",
-    "typescript"
+    "typescript",
+    "gulp",
+    "gulp-bump"
   ],
   "dependencies": {
     "yeoman-generator": "^0.18.9",
@@ -29,6 +31,8 @@
     "yosay": "^1.0.2"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "underscore.string": "*",
+    "path": "*"
   }
 }
