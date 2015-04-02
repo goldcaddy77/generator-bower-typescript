@@ -1,0 +1,4 @@
+bower_components
+example/bower_components
+node_modules
+<%# Note: this isn't really a template file, but npm renames .gitignore files to .npmignore during packaging, so we need to give it another name %>
