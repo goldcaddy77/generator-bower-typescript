@@ -26,13 +26,13 @@
     "gulp-bump"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.18.9",
     "chalk": "^1.0.0",
+    "path": "^0.11.14",
+    "underscore.string": "^3.0.3",
+    "yeoman-generator": "^0.18.9",
     "yosay": "^1.0.2"
   },
   "devDependencies": {
-    "mocha": "*",
-    "underscore.string": "*",
-    "path": "*"
+    "mocha": "*"
   }
 }
