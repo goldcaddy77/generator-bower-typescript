@@ -1,0 +1,7 @@
+bower_components
+example/bower_components
+node_modules
+<%
+// Note: we've made this a template so that the filename isn't exactly .gitignore. NPM renames .gitignore
+//       files to .npmignore automagically.  See: See https://github.com/npm/npm/issues/7252
+%>
