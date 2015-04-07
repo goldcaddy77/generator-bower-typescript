@@ -66,13 +66,12 @@ gulp.task('bump', function() {
   inquirer.prompt( questions, function( answers ) {
     if(answers.bump === 'Y') {
 
-      return gulp.src(['./package.json', './bower.json'])
+      return gulp.src(['./package.json'])
           .pipe(bump({type: 'patch'}))
           .pipe(gulp.dest('./'))
           .pipe(git.commit('bump patch version'))
           .pipe(filter('package.json'))  // read package.json for the new version
           .pipe(tagVersion());           // create tag
-
     }
   });
 });
