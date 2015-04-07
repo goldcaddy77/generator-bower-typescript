@@ -44,7 +44,12 @@ If you see an alert box that says "Hello World," you're good to go.
 
 ## Bower Registration
 
-... TODO ...
+        # Bump the versions in bower.json and package.json, create git tag
+        gulp bump
+        git push origin master --tags
+
+        # Register on Bower
+        bower register <module-name> git://github.com/<git user>/<module-name>.git
 
 ## Bumping Your Module Version
 
