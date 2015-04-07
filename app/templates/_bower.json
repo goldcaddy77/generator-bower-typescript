@@ -1,9 +1,29 @@
 {
   "name": "<%= componentKey %>",
-  "version": "0.0.0",
   "description": "<%= componentDescription %>",
   "main": "dist/main.js",
+  "authors": [
+    "AUTHOR_NAME <AUTHOR_EMAIL>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "typescript",
+    "gulp"
+  ],
+  "repository": "https://github.com/GITHUB_NAME/REPO_NAME",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {},
+  "ignore": [
+    "bower_components",
+    "node_modules",
+    "example",
+    "src",
+    ".gitignore",
+    ".jshintrc",
+    "bower.json",
+    "gulpfile.js",
+    "package.json"
+  ]
 }
-

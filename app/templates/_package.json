@@ -4,5 +4,7 @@
   "description": "<%= componentDescription %>",
   "main": "dist/main.js",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "karma-typescript-preprocessor": "git://github.com/wanthony/karma-typescript-preprocessor"
+  }
 }

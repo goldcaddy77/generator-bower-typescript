@@ -81,9 +81,25 @@ module.exports = yeoman.generators.Base.extend({
   // priority 7: where installation are run (npm, bower)
   install: function () {
     var npmPackages = [
-      'bower','del','event-stream','gulp','gulp-bump','gulp-concat','gulp-filter',
-      'gulp-git','gulp-inject','gulp-tag-version','gulp-typescript','gulp-util',
-      'inquirer','requirejs','typescript'
+      'bower',
+      'del',
+      'event-stream',
+      'gulp',
+      'gulp-bump',
+      'gulp-concat',
+      'gulp-filter',
+      'gulp-git',
+      'gulp-inject',
+      'gulp-tag-version',
+      'gulp-typescript',
+      'gulp-util',
+      'inquirer',
+      'jasmine-core',
+      'karma',
+      'karma-jasmine',
+      'karma-phantomjs-launcher',
+      'requirejs',
+      'typescript'
       ];
 
     this.npmInstall(npmPackages, { 'saveDev': true });
