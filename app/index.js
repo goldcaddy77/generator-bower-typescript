@@ -5,7 +5,6 @@ var yeoman = require('yeoman-generator'),
     _ = require('underscore.string'),
     path = require('path');
 
-
 module.exports = yeoman.generators.Base.extend({
 
   // priority 1: initialization methods (checking project state, getting configs, etc)
@@ -80,6 +79,11 @@ module.exports = yeoman.generators.Base.extend({
 
   // priority 7: where installation are run (npm, bower)
   install: function () {
+    // This is a hack for now.  For some reason, yeoman is not skipping install with this option
+    if (this.options['skip-install']) {
+      return;
+    }
+
     var npmPackages = [
       'bower',
       'del',

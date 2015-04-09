@@ -5,7 +5,7 @@ This is a generator to quickly create Bower modules written in TypeScript using 
 * Transpiles TypeScript to Javascript
 * Creates both bower.json and package.json (for npm)
 * Automatic bumping of patch version number through a gulp task
-
+* Tests via Karma and Jasmine
 
 ## Usage
 
@@ -41,6 +41,15 @@ After answering questions about your app, run the example:
 
 If you see an alert box that says "Hello World," you're good to go.
 
+## Running Generator Tests
+
+Yeoman uses mocha by default.  To run the tests, first install mocha globally:
+
+        npm install -g mocha
+
+Then run the test suite:
+
+        mocha test/**/*.js      
 
 ## Bower Registration
 
